@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="C1.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form id="studentForm" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="division">Division:</label>
+            <input type="text" id="division" name="division" placeholder="Enter your division" required>
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="interest">Area of Interest:</label>
+            <textarea id="interest" name="interest" placeholder="Enter your area of interest" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
